@@ -1,6 +1,6 @@
 ![walk](pix/walk.png)
 ### Split 
-**N**ombre *五* seems a bit weird, it looks like one of the pioneers in computing
+**N**ombre *五* seems a bit weird, it looks like one of the pioneers in computing,
 Markov stuff, zo I've dodged it for a while and picked nombre *六*. It has a super
 short description, but I couldn't find equally super simple solution: We are given
 a nombre ***a***, and are asked to express integer powers of it with minimum multiplications,
@@ -62,7 +62,7 @@ mysql> SHOW forest;
 *(1,5)-split* for the *6-rooted* forest *(fig 35.)**?*** For every tree we have a corresponding set of
 nodes: In the above example the corresponding sets are *{ 1,2,3,6 }* and *{ 1,2,3,4,5,6 }* respectively.
 So the *(3,3)-split* has less multiplications because the corresponding set has the lesser cardinality.
-One of the problems here is that the following ***Python*** code:
+One of the problems of this approach is that the following ***Python*** code:
 ```Python
 def split(n): 
     for j in range(n >> 1, 0, -1): 
@@ -71,6 +71,6 @@ def split(n):
 ```
 will start running forever after *n* around *23*. One possible workaround is to realize that for
 even nombres, we don't need to ck all splits but only the last symmetric *(n/2,n/2)* split which
-will roughly double the computational range.
+will roughly double nombres' range.
 
 https://youtu.be/BEM-9mPe120
